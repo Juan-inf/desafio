@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto - Juan Pablo Calla</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icono" type="image/x-icon" href="./assets/one.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header class="header">
+        <header class="header">
+            <div class="imagen__left">
+                <a href="#">
+                    <img src="./assets/Logo_alura.png" 
+                        alt="Logo_alura" 
+                        class="Logo_alura">
+                </a>
+            </div>
+            <h1 class="titulo_header">¡Bienvenidos a nuestro encriptador y desencriptador de texto!
+            </h1>
+            <div class="imagen__right">
+                <a href="#">
+                    <img src="./assets/one.png" 
+                        alt="Logo_one" 
+                        class="Logo_one">
+                </a>
+            </div>
+        </header>
+    </header>
+    <main class="main__encriptador">
+        <section class="section__encriptador">
+            <div class="contenedor__encriptador">
+                <textarea id="textareaContenedor" class="contenedor__texto" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="zona__acciones">
+                <div class="advertencia__importante">
+                    <img class="advertencia__importante_imagen" src="assets/advertencia_logo.png" alt="vector">
+                    <p class="advertencia__texto">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="zona__botones">
+                    <button onclick="botonEncriptarTexto()" id="botonEncriptado" class="boton__encriptar">Encriptar</button>
+                    <button onclick="botonDesencriptarTexto()" id="botonDesencriptado" class="boton__desencriptar">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <section class="zona__resultado">
+            <div id="seccionResultado" class="resultado__texto">
+                <img class="zona__resultado__imagen" src="assets/persona.png" alt="Muñeco">
+                <h2 class="zona__resultado__subtitulo">Ningun mensaje fue encontrado</h2>
+                <p class="zona__resultado__texto">Ingresa el texto que deseas encriptar o desencriptar.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__texto">Desarrollado por Juan Pablo Calla | Alura 2024 | </p>
+        <a href="https://www.linkedin.com/in/juan-pablo-calla-775a66264">
+            <img src="./assets/logolinkedin.png" alt="linkedin" class="linkedin__logo" >
+        </a>
+        <a href="https://github.com/juan-inf/"">
+            <img src="./assets/logogithub.png" alt="github" class="github__logo">
+        </a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
